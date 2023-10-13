@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contact Form Test</title>
+        <link rel="stylesheet" href="ContactForm.css">
+       
+    </head>
+    <body>
+        <main>
+            <div class="ContactForm-container" action="https://formsubmit.co/hendrikrestinov5@gmail.com" method="POST">
+                <h1>Kontakteeruge meiega</h1>
+                <form class="ContactForm">
+                    <div class="row1"> 
+                        <div class="input-firstName">
+                            <label class="label">Eesnimi *</label>
+                            <input class="input" type="text" id="firstName" required>
+                        </div>
+                        <div class="input-lastName">
+                            <label class="label">Perekonnanimi *</label>
+                            <input class="input" type="text" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="input-Email">
+                            <label class="label">Email *</label>
+                            <input class="input" type="email" id="emailInfo" required>
+                        </div>
+                        <div class="input-phoneNumber">
+                            <label class="label">Telefon *</label>
+                            <input class="input" type="text" id="phoneNumber" placeholder=" (+372) 533 75 713" required>
+                        </div>
+                     
+                    </div>
+                    <div class="row3">
+                        <div class="input-textarea-container">
+                            <label class="label">Sõnum *</label>
+                            <textarea class="input-textarea" id="comments" required></textarea>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-submit" type="submit">Saada</button>
+                    </div>
+                </form>
+            </div>
+           
+        </main>
+        
+    </body>
+</html>
