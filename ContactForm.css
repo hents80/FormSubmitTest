@@ -1,0 +1,117 @@
+/* Custom variables */
+:root {
+    --border-color: rgba(77, 43, 38, 0.2);
+}
+
+.ContactForm{
+    display: grid;
+    grid-template-rows: 80px 80px 150px;
+}
+
+body{
+    font-family: Roboto, Arial;
+}
+    
+
+.ContactForm-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    left: 100px;
+    justify-content: center;
+}
+
+
+.row1{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.row3,
+.row2{
+    display: flex;
+    flex-direction: row;
+    margin: 0
+}
+
+
+.input-textarea-container,
+.input-Email,
+.input-phoneNumber,
+.input-firstName{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-textarea,
+.input{
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 3px var(--border-color);
+    border: var(--border-color) solid 2px;
+    padding-left: 8px;
+}
+
+.input::placeholder{
+    color: rgb(211, 211, 211);
+   
+}
+
+.label{
+    font-size: 20px;
+}
+
+.input-lastName{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 50px;
+}
+
+
+
+
+.input-Email{
+    flex: 2;
+}
+
+.input-phoneNumber{
+    margin-left: 50px;
+}
+
+
+.input-textarea{
+    resize: none;
+    height: 300px;
+    padding: 10px 10px;
+}
+
+
+.button-submit{
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(255, 118, 6);
+    color: white;
+    padding: 8px 30px;
+    font-size: 15px;
+    transition: box-shadow 0.15s, color 0.15s;
+}
+
+.button-submit:hover{
+    box-shadow: inset 0px 0px 6px rgba(36, 21, 8, 0.7);
+    cursor: pointer;
+    color: rgb(236, 236, 236);
+    
+}
+
+.button-submit:active{
+    background: linear-gradient(rgba(255, 118, 6, 1), rgba(221, 111, 20, 1));
+}
+
+
+.button-container{
+    margin-top: 20px;
+}
